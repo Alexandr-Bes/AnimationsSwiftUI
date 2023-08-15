@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1A02322A8BB95C00CC562C /* CircleProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A02312A8BB95C00CC562C /* CircleProgressIndicator.swift */; };
+		1C1A02342A8BBB7F00CC562C /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A02332A8BBB7F00CC562C /* BackgroundView.swift */; };
 		1C9C3E132A1021D70057F4B3 /* AnimationsSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C3E122A1021D70057F4B3 /* AnimationsSwiftUIApp.swift */; };
 		1C9C3E152A1021D70057F4B3 /* AnimateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C3E142A1021D70057F4B3 /* AnimateView.swift */; };
 		1C9C3E172A1021D90057F4B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C3E162A1021D90057F4B3 /* Assets.xcassets */; };
@@ -14,9 +16,13 @@
 		1CB47B2A2A814CAC007FE145 /* ListOfAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB47B292A814CAC007FE145 /* ListOfAnimations.swift */; };
 		1CB47B2C2A814CDB007FE145 /* AnimationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB47B2B2A814CDB007FE145 /* AnimationModel.swift */; };
 		1CB47B2E2A815D26007FE145 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB47B2D2A815D26007FE145 /* Extensions.swift */; };
+		1CB47B322A82BC7D007FE145 /* TransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB47B312A82BC7D007FE145 /* TransitionView.swift */; };
+		1CB5EDE12A8A9E2B003FE8B4 /* AnimateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5EDE02A8A9E2B003FE8B4 /* AnimateButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C1A02312A8BB95C00CC562C /* CircleProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressIndicator.swift; sourceTree = "<group>"; };
+		1C1A02332A8BBB7F00CC562C /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		1C9C3E0F2A1021D70057F4B3 /* AnimationsSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationsSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9C3E122A1021D70057F4B3 /* AnimationsSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsSwiftUIApp.swift; sourceTree = "<group>"; };
 		1C9C3E142A1021D70057F4B3 /* AnimateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateView.swift; sourceTree = "<group>"; };
@@ -25,6 +31,8 @@
 		1CB47B292A814CAC007FE145 /* ListOfAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfAnimations.swift; sourceTree = "<group>"; };
 		1CB47B2B2A814CDB007FE145 /* AnimationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationModel.swift; sourceTree = "<group>"; };
 		1CB47B2D2A815D26007FE145 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1CB47B312A82BC7D007FE145 /* TransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionView.swift; sourceTree = "<group>"; };
+		1CB5EDE02A8A9E2B003FE8B4 /* AnimateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +66,9 @@
 			isa = PBXGroup;
 			children = (
 				1C9C3E122A1021D70057F4B3 /* AnimationsSwiftUIApp.swift */,
-				1C9C3E142A1021D70057F4B3 /* AnimateView.swift */,
-				1CB47B292A814CAC007FE145 /* ListOfAnimations.swift */,
 				1CB47B2B2A814CDB007FE145 /* AnimationModel.swift */,
-				1CB47B2D2A815D26007FE145 /* Extensions.swift */,
+				1CB47B292A814CAC007FE145 /* ListOfAnimations.swift */,
+				1CB5EDDF2A8A9E09003FE8B4 /* Utility */,
 				1CB47B282A814C8E007FE145 /* List of Animations */,
 				1C9C3E162A1021D90057F4B3 /* Assets.xcassets */,
 				1C9C3E182A1021D90057F4B3 /* Preview Content */,
@@ -80,8 +87,21 @@
 		1CB47B282A814C8E007FE145 /* List of Animations */ = {
 			isa = PBXGroup;
 			children = (
+				1C9C3E142A1021D70057F4B3 /* AnimateView.swift */,
+				1CB47B312A82BC7D007FE145 /* TransitionView.swift */,
 			);
 			path = "List of Animations";
+			sourceTree = "<group>";
+		};
+		1CB5EDDF2A8A9E09003FE8B4 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1CB5EDE02A8A9E2B003FE8B4 /* AnimateButton.swift */,
+				1C1A02312A8BB95C00CC562C /* CircleProgressIndicator.swift */,
+				1CB47B2D2A815D26007FE145 /* Extensions.swift */,
+				1C1A02332A8BBB7F00CC562C /* BackgroundView.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,11 +174,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1A02342A8BBB7F00CC562C /* BackgroundView.swift in Sources */,
 				1CB47B2E2A815D26007FE145 /* Extensions.swift in Sources */,
+				1CB5EDE12A8A9E2B003FE8B4 /* AnimateButton.swift in Sources */,
 				1CB47B2C2A814CDB007FE145 /* AnimationModel.swift in Sources */,
 				1C9C3E152A1021D70057F4B3 /* AnimateView.swift in Sources */,
+				1C1A02322A8BB95C00CC562C /* CircleProgressIndicator.swift in Sources */,
 				1C9C3E132A1021D70057F4B3 /* AnimationsSwiftUIApp.swift in Sources */,
 				1CB47B2A2A814CAC007FE145 /* ListOfAnimations.swift in Sources */,
+				1CB47B322A82BC7D007FE145 /* TransitionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

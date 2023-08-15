@@ -52,7 +52,7 @@ struct AnimateView: View {
                 }
             }
             .background(
-                LinearGradient(gradient: Gradient(colors: [.red, .blue]), startPoint: .top, endPoint: .bottom)
+                BackgroundView()
             )
             .navigationBarTitle(animation.type.name + " Animation")
             .navigationBarTitleDisplayMode(.inline)
@@ -63,10 +63,7 @@ struct AnimateView: View {
     @ViewBuilder private func animateButton() -> some View {
         HStack {
             Spacer()
-            Button {
-                let impactFeedback = UIImpactFeedbackGenerator(style: .medium)
-                impactFeedback.impactOccurred()
-                
+            AnimateButton {
                 Task {
                     await animate(duration: animation.duration) {
                         location = location == 0 ? 1 : 0
@@ -76,14 +73,7 @@ struct AnimateView: View {
                         degrees = degrees == 0 ? 180 : 0
                     }
                 }
-            } label: {
-                Text("Press to Animate")
             }
-            .padding([.top, .bottom], 20)
-            .padding([.leading, .trailing], 50)
-            .background(.red)
-            .foregroundColor(.white)
-            .cornerRadius(18)
             Spacer()
         }
     }

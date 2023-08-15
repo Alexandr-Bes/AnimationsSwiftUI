@@ -18,6 +18,9 @@ struct ListOfAnimations: View {
                     NavigationLink(destination: AnimateView(animation: animation)) {
                         Text("Basic Animations")
                     }
+                    NavigationLink(destination: TransitionView()) {
+                        Text("Transition Animations")
+                    }
                 }
             }
             .navigationBarTitle("List of Animations")
